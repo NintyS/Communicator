@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
   ui->setupUi(this);
   chatSocket = new QTcpSocket();
 
+  // ui->textEdit->installEventFilter(keyPressEvent);
+
   QObject::connect(chatSocket, &QTcpSocket::connected, [&] {
     chatSocket->write(
         "{"
@@ -59,6 +61,18 @@ MainWindow::MainWindow(QWidget *parent)
                                   Obj.value("Date").toString());
       }
     }
+  });
+
+  QObject::connect(ui->textEdit, &TextInput::enterPressed,
+                   [&] {
+                       chatSocket->write(
+                           "{"
+                           " \"Message\": \"" +
+          ui->textEdit->toPlainText().toUtf8().replace("\n", "\\n") +
+                           "\""
+                           "}");
+                       chatSocket->flush();
+                       ui->textEdit->setText("");
   });
 
   // QAudioInput *audioInput = new QAudioInput();
@@ -153,21 +167,6 @@ void MainWindow::on_pushButton_3_clicked() {
   if (ui->pushButton_3->text() == "Unmute") {
     ui->pushButton_3->setText("Mute");
     // audioInput->setMuted(false);
-  }
-}
-
-void MainWindow::keyPressEvent(QKeyEvent *event) {
-  if (((event->key() == Qt::Key_Return) &&
-       ui->stackedWidget->currentIndex() == 1) &&
-      event->key() != Qt::Key_Shift) {
-    chatSocket->write(
-        "{"
-        " \"Message\": \"" +
-        ui->textEdit->toPlainText().toUtf8() +
-        "\""
-        "}");
-    chatSocket->flush();
-    ui->textEdit->setText("");
   }
 }
 

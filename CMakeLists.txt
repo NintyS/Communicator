@@ -19,6 +19,7 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        textInput.h
         ${TS_FILES}
 )
 
@@ -26,6 +27,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(BetterCommunicator
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Settings.ui
+        textInput.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET BetterCommunicator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

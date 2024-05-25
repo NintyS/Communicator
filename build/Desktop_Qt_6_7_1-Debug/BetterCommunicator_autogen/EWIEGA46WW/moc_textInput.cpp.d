@@ -1,6 +1,8 @@
 /home/nintys/Documents/Communicator/Communicator/build/Desktop_Qt_6_7_1-Debug/BetterCommunicator_autogen/EWIEGA46WW/moc_textInput.cpp: /home/nintys/Documents/Communicator/Communicator/textInput.h \
   /home/nintys/Documents/Communicator/Communicator/build/Desktop_Qt_6_7_1-Debug/BetterCommunicator_autogen/moc_predefs.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QBuffer \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QList \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QMimeData \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QObject \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QRect \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/QSize \
@@ -19,6 +21,7 @@
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qatomic_cxx11.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbasicatomic.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbindingstorage.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbuffer.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbytearray.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qbytearraylist.h \
@@ -70,6 +73,7 @@
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qmath.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qmetacontainer.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qmetatype.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qmimedata.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qminmax.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qnamespace.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qnativeinterface.h \
@@ -132,11 +136,13 @@
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qxptype_traits.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtCore/qyieldcpu.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/QClipboard \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/QKeyEvent \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/QTransform \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qaction.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qbitmap.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qbrush.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qclipboard.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qcolor.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qcursor.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qevent.h \
@@ -174,8 +180,10 @@
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qvector2d.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qvectornd.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/QApplication \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/QTextEdit \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/qapplication.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/qframe.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/nintys/Qt/6.7.1/gcc_64/include/QtWidgets/qtextedit.h \

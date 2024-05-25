@@ -14,6 +14,8 @@
 // #include <opus/opus.h>
 #include <QAudioSource>
 
+#include "textInput.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -27,10 +29,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-    void keyPressEvent(QKeyEvent *event);
-
-    // void eventFilter(QObject *obj, QEvent *event);
 
 private slots:
     void on_pushButton_5_clicked();
